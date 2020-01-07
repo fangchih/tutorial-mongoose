@@ -11,7 +11,7 @@ var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" 
 var app = express();
 
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://hbs:hbs1234@cluster0-63tdc.gcp.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = 'mongodb://user:user1234@localhost/local_library?retryWrites=true&w=majority';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
